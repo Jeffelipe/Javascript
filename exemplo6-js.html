@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+    <title>Trabalhando com Números </title> 
+    <style>
+        body {font: 12pt Arial}
+        button {font-size: 12pt; padding: 30px;}
+    </style>
+</head> 
+<body>
+    <h1>Trabalhando com Dados v2.0</h1>
+    <button onclick="calcular()">Clique aqui para Calcular</button>
+    <section id = "resultado">
+        <p> Aqui vai aparecer o resultado... </p>
+    </section>
+
+<script>
+    function calcular(){
+ 
+        let number1 = parseFloat(window.prompt('Digite o primeiro número:')); 
+        let number2 = parseFloat(window.prompt('Digite o segundo número:')); 
+        let res = document.getElementById('resultado'); 
+        let soma = number1 + number2; 
+        res.innerHTML = `Você digitou os números <strong>${number1}</strong> e <strong>${number2}</strong>.<br> 
+        A soma desses números é <strong>${soma}</strong>.`;
+     }
+</script>
+</body>
+</html>

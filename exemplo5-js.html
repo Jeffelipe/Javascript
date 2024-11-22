@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+    <title>Trabalhando com Números </title> 
+    <style>
+        body {font: 12pt Arial}
+        button {font-size: 12pt; padding: 30px;}
+    </style>
+</head> 
+<body>
+    <h1>Trabalhando com Dados v2.0</h1>
+    <button onclick="inicio()">Clique aqui para Começar</button>
+    <section id = "res">
+        <p> Aqui vai aparecer o resultado... </p>
+    </section>
+
+<script>
+    function inicio(){
+
+        let name = window.prompt('Qual o seu nome?'); 
+        let number = window.prompt('Digite um número:'); 
+        let res = document.getElementById('res'); 
+        let half = number / 2; let double = number * 2; 
+        res.innerHTML = `Olá, <strong>${name}</strong>! É um grande prazer te conhecer!&#x270B<br> 
+        Você digitou o número <strong>${number}</strong>.<br> 
+        A metade de ${number} é <strong>${half}</strong>.<br> 
+        O dobro de ${number} é <strong>${double}</strong>.`;
+     }
+</script>
+</body>
+</html>

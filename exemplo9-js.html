@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Isaac Newton - Operações Matemáticas</title> 
+    <style>
+        body { font: 14pt Arial, sans-serif; 
+        background-color: #f4f4f9; margin: 0; padding: 0; display: flex; 
+        flex-direction: column; align-items: center; padding: 20px; 
+        } h1, h2 
+ { color: #333; margin-top: 20px; 
+ text-align: center; } .section 
+ { background-color: white; 
+    border: 1px solid #ddd; padding: 20px; 
+ border-radius: 5px; 
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); max-width: 800px; width: 100%; 
+ margin-bottom: 20px; } .section h2 { color: #007BFF; } .section p { margin: 10px 0; line-height: 1.6; } 
+ .highlight { background-color: #e7f3ff; padding: 5px; border-radius: 3px; } button { font-size: 12pt; 
+ padding: 15px 30px; margin: 20px 0; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s; } 
+ button:hover { background-color: #0056b3; } #resultado { background-color: rgb(175, 170, 250); border: 1px solid #9e0303b7; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); max-width: 600px; text-align: center; } #resultado p { margin: 10px 0; } 
+ </style> 
+ </head> 
+            <body> 
+    <h1>Isaac Newton</h1> 
+    </div> 
+    
+    <div class="section">
+    <h2>Operações Matemáticas</h2> 
+        <label>Insira um valor:</label>
+        <input type="number" id="valor" class="valor"><br><br>
+        <button onclick="calcular()">Calcular</button> 
+        <section id="resultado">
+        <p>Aqui vai aparecer o resultado...</p>
+        </section> 
+        </div> 
+        
+        <script> function calcular() {
+            let valor = parseFloat(document.getElementById('valor').value); 
+            let res = document.getElementById('resultado');
+            let absoluto = Math.abs(valor); 
+            let parteInteira = Math.floor(valor);
+            let inteiroMaisProximo = Math.round(valor);
+            let raizQuadrada = Math.sqrt(valor).toFixed(2); 
+            let raizCubica = Math.cbrt(valor).toFixed(2);
+            let aoQuadrado = Math.pow(valor, 2).toFixed(2); 
+            let aoCubo = Math.pow(valor, 3).toFixed(2); 
+
+    res.innerHTML = `Valor fornecido: <strong>${valor}</strong><br> 
+Valor absoluto: <strong>${absoluto}</strong><br> 
+Parte inteira: <strong>${parteInteira}</strong><br> 
+Valor inteiro mais próximo: <strong>${inteiroMaisProximo}</strong><br> 
+Raiz quadrada: <strong>${raizQuadrada}</strong><br> 
+Raiz cúbica: <strong>${raizCubica}</strong><br> 
+Valor ao quadrado: <strong>${aoQuadrado}</strong><br>
+Valor ao cubo: <strong>${aoCubo}</strong><br>`; 
+} 
+</script> 
+</body> 
+</html>

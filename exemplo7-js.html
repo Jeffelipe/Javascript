@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+    <title>Trabalhando com Médias </title> 
+    <style>
+
+         body { font: 12pt Arial, sans-serif; 
+background-color: #f4f4f9; margin: 0; 
+padding: 0; display: flex; 
+flex-direction: column; align-items: center;
+ } 
+h1 { color: #333; margin-top: 20px; } 
+button { font-size: 12pt; padding: 15px 30px; margin: 20px 0; background-color: #007BFF; color: white; border: none; 
+border-radius: 5px; 
+cursor: pointer; transition: background-color 0.3s; } 
+button:hover { background-color: #0056b3; }
+ #resultado { background-color: rgb(175, 170, 250); border: 1px solid #9e0303b7; padding: 20px; 
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+max-width: 600px; 
+text-align: center;
+ } 
+#resultado p { margin: 10px 0;
+}
+
+    </style>
+</head> 
+<body>
+    <h1>Trabalhando com Médias</h1>
+    <button onclick="media()">Clique aqui para Calcular</button>
+    <section id = "resultado">
+        <p> Aqui vai aparecer o resultado... </p>
+    </section>
+
+<script>
+    function media(){
+ 
+        let name = window.prompt('Qual o nome do aluno?'); 
+        let nota1 = parseFloat(window.prompt('Informe a primeira nota')); 
+        let nota2 = parseFloat(window.prompt('Informe a segunda nota'));
+        let res = document.getElementById('resultado'); 
+
+        let media = (nota1 + nota2) / 2;
+
+        res.innerHTML = `O aluno <strong>${name}</strong><br> 
+        A primeira nota <strong>${nota1}</strong>.<br> 
+        A segunda nota <strong> ${nota2}</strong>.<br> A média final do aluno <strong>${media}</strong>.<br> `;
+     }
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+body { font: 12pt Arial, sans-serif; 
+    background-color: #f4f4f9; margin: 0; 
+    padding: 0; display: flex; flex-direction: column; 
+    align-items: center; } 
+    h1 { color: #333;
+     margin-top: 20px; }
+    button { font-size: 12pt;
+     padding: 15px 30px; 
+    margin: 20px 0; 
+    background-color: #007BFF; 
+    color: white; border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    } 
+    button:hover
+     { background-color: #0056b3; 
+    } #resultado 
+    { background-color: rgb(175, 170, 250); 
+    border: 1px solid #9e0303b7;
+     padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    max-width: 600px; 
+    text-align: center; 
+    }
+     #resultado p
+     { 
+    margin: 10px 0; 
+    } 
+    /* Dinâmico 
+    */ .dynamic-style { 
+    background-color: #ffeb3b; 
+    color: #000; 
+    }
+    
